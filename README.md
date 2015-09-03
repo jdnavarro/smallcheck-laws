@@ -1,26 +1,23 @@
 # SmallCheck Laws
 
-[![Hackage Version](https://img.shields.io/hackage/v/smallcheck-laws.svg)](https://hackage.haskell.org/package/smallcheck-laws) [![Build Status](https://img.shields.io/travis/jdnavarro/smallcheck-laws.svg)](https://travis-ci.org/jdnavarro/smallcheck-laws)
+[![Hackage Version](https://img.shields.io/hackage/v/smallcheck-laws.svg)](https://hackage.haskell.org/package/smallcheck-laws)
+[![Build Status](https://img.shields.io/travis/jdnavarro/smallcheck-laws.svg)](https://travis-ci.org/jdnavarro/smallcheck-laws)
 
-Automatic `smallcheck` properties and `tasty` runners for:
+[`smallcheck`](https://hackage.haskell.org/package/smallcheck) properties for
+the following laws:
 
- - Monoid laws.
- - Functor laws.
- - Applicative laws.
- - Monad laws.
+- Monoid
+- Functor
+- Applicative
+- Monad
 
-## Installation
+Use this package to create your own fine tuned `smallcheck` tests. For
+preassembled test runners with minimal setup and sensible defaults, you can use
+[`tasty-laws`](https://hackage.haskell.org/package/tasty-laws).
 
-Make sure you have [`stack`](https://github.com/commercialhaskell/stack)
-installed. Then type:
+## Contact
 
-```sh
-$ stack build
-```
-To run the test suite type:
+Contributions and bug reports are welcome!
 
-```sh
-$ stack test
-```
-
-<!-- TODO: Write minitutorial here about to use 'tasty' orphan instances -->
+Please feel free to contact jdnavarro on the #haskell IRC channel on
+irc.freenode.net.
