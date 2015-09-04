@@ -7,8 +7,8 @@ module Test.SmallCheck.Laws.Monoid
   -- * Associativity
   , associativity
   , associativitySum
-  -- * 
-  , mconcat
+  -- * mconcat
+  , mconcatProp
   ) where
 
 #if MIN_VERSION_base(4,8,0)
@@ -77,13 +77,15 @@ associativitySum xs ys zs =
     over (zipLogic3 xs ys zs) $ \(x,y,z) ->
         x <> (y <> z) == (x <> y) <> z
 
--- | When implementing 'mconcat' yourself this law must hold:
+-- * mconcat
+
+-- | When implementing 'mconcat' yourself this must hold:
 --
 -- @
 -- 'mconcat' ≡ 'foldr' 'mappend' 'mempty'
 -- @
-mconcat
+mconcatProp
   :: (Eq a, Monad m, Show a, Monoid a)
   => Series m a -> Property m
-mconcat s = over (sequenceA $ replicate 3 s) $ \l ->
+mconcatProp s = over (sequenceA $ replicate 3 s) $ \l ->
     Monoid.mconcat l == foldr mappend mempty l
