@@ -1,5 +1,5 @@
 name:                smallcheck-laws
-version:             0.1
+version:             0.2
 synopsis:            SmallCheck properties for common laws
 description:
   'smallcheck' properties for 'Monoid', 'Functor', 'Applicative' and 'Monad'

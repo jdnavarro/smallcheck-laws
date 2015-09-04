@@ -4,6 +4,11 @@ follows the formatting recommendations from [Keep a
 CHANGELOG](http://keepachangelog.com/). This project adheres to [Semantic
 Versioning](http://semver.org/).
 
+## [0.2] - 2015-09-04
+### Removed
+- Move `Tasty` modules to a separate package
+  [`tasty-laws`](https://hackage.haskell.org/package/tasty-laws).
+
 ## [0.1] - 2015-08-05
 ### Added
 - Functor laws.
@@ -11,4 +16,5 @@ Versioning](http://semver.org/).
 - Monoid Laws.
 - Monad laws.
 
+[0.2]: https://github.com/jdnavarro/smallcheck-laws/compare/v0.1...v0.2
 [0.1]: https://github.com/jdnavarro/smallcheck-laws/compare/bf1caa...v0.1
