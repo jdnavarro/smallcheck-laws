@@ -8,6 +8,8 @@ license:             BSD3
 license-file:        LICENSE
 author:              Danny Navarro
 maintainer:          j@dannynavarro.net
+homepage:            http://github.com/jdnavarro/smallcheck-laws
+bug-reports:         http://github.com/jdnavarro/smallcheck-laws/issues
 category:            Testing
 build-type:          Simple
 cabal-version:       >=1.10
