@@ -22,6 +22,14 @@ identity
   => Series m (f a) -> Property m
 identity s = over s $ \x -> fmap id x == x
 
+-- | Check the /composition/ law hold for the given 'Functor' 'Series':
+--
+-- @
+-- 'fmap' (f . g) ≡ 'fmap' f . 'fmap' g
+-- @
+--
+-- Exhaustive generation for the @f@ and @g@ 'Series'. Be aware of
+-- combinatorial explosion.
 composition
   :: ( Monad m, Functor f, Show a, Show b, Show c
      , Show (f a), Eq (f c)
@@ -39,6 +47,8 @@ composition xs fs gs =
 -- @
 -- 'fmap' (f . g) ≡ 'fmap' f . 'fmap' g
 -- @
+--
+-- This uses 'zipLogic' for the generation of the @f@ and @g@ 'Series'.
 compositionSum
   :: ( Monad m, Functor f, Show a, Show b, Show c
      , Show (f a), Eq (f c)
