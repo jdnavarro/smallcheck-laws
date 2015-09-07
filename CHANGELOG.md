@@ -4,6 +4,14 @@ follows the formatting recommendations from [Keep a
 CHANGELOG](http://keepachangelog.com/). This project adheres to [Semantic
 Versioning](http://semver.org/).
 
+## [0.3] - 2015-09-07
+### Added
+- *Exhaustive* property testing using `Series` product. Previous
+  properties renamed appending `Sum`.
+
+### Changed
+- Rename `mconcat` `Monoid` property.
+
 ## [0.2] - 2015-09-04
 ### Removed
 - Move `Tasty` modules to a separate package
@@ -16,5 +24,6 @@ Versioning](http://semver.org/).
 - Monoid Laws.
 - Monad laws.
 
+[0.3]: https://github.com/jdnavarro/smallcheck-laws/compare/v0.2...v0.3
 [0.2]: https://github.com/jdnavarro/smallcheck-laws/compare/v0.1...v0.2
 [0.1]: https://github.com/jdnavarro/smallcheck-laws/compare/bf1caa...v0.1

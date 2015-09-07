@@ -4,7 +4,7 @@
 [![Build Status](https://img.shields.io/travis/jdnavarro/smallcheck-laws.svg)](https://travis-ci.org/jdnavarro/smallcheck-laws)
 
 [`smallcheck`](https://hackage.haskell.org/package/smallcheck) properties for
-the following laws:
+testing the following laws:
 
 - Monoid
 - Functor

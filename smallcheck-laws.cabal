@@ -1,9 +1,9 @@
 name:                smallcheck-laws
-version:             0.2
+version:             0.3
 synopsis:            SmallCheck properties for common laws
 description:
-  'smallcheck' properties for 'Monoid', 'Functor', 'Applicative' and 'Monad'
-  laws.
+  'smallcheck' properties for testing 'Monoid', 'Functor', 'Applicative' and
+  'Monad' laws.
 license:             BSD3
 license-file:        LICENSE
 author:              Danny Navarro
